@@ -89,7 +89,6 @@ def generarInforme(ListaExperimentos):
         print("NO hay experimentos registrados")
         return
     
-    # Abre el archivo en modo escritura
     with open(path, "w") as informe:
         for experimento in ListaExperimentos:
             informe.write(f"\nNombre experimento:  {experimento.nombreExperimento}\n")
